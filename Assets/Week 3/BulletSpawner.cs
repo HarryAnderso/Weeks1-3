@@ -28,12 +28,12 @@ public class BulletSpawner : MonoBehaviour
     void Spawn()
     {
         GameObject spawnedBullet = Instantiate(prefab);
-        bullet = spawnedBullet.GetComponent<Bullet>();
+        //bullet = spawnedBullet.GetComponent<Bullet>();
     }
 
     void Fire()
     {
-        bullet.hasBeenFired = true;
+        //bullet.hasBeenFired = true;
         bullet = null;
     }
 }
