@@ -8,21 +8,22 @@ public class Bullet : MonoBehaviour
     public bool hasBeenFired = false;
     void Update()
     {
-        PointAtMouse();
+        //PointAtMouse();
+        //stupid
     }
 
     void PointAtMouse()
     {
-        Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouse.z = 0;
-        Vector2 direction = mouse - transform.position;
+        //Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mouse.z = 0;
+        //Vector2 direction = mouse - transform.position;
 
-        transform.up = direction;
+        //transform.up = direction;
     }
 
     void Movement()
     {
-        transform.position += transform.up * speed * Time.deltaTime;
+        //transform.position += transform.up * speed * Time.deltaTime;
         //transform.Translate(transform.up * speed * Time.deltaTime);
     }
 }
